@@ -1,25 +1,29 @@
-/* :root{
+:root{
     --color-primario : black;
     --color-secundario: white;
     --color-letra: white;
     --color-letra-secundaria: red;
-} */
+}
 .logo-img img{
     width: 60px;
     height: auto;
-    background-color: aliceblue;
+    background-color: var(--color-secundario);
     padding: 3px;
     border-radius: 50%;
     margin-left: 20px;
+    transition: all .3s ease-in-out;
 }
 
+.logo-img img:hover{
+    box-shadow: 1px 1px 8px 1px var(--color-letra-secundaria);
+}
 .nav-item a{
-    color: whitesmoke;
+    color: var(--color-letra);
 }
 
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
     color: var(--color-secundario);
 }
 .nav-link:hover{
-    color: var(--color-secundario); 
+    color: var(--color-secundario) !important; 
 }
